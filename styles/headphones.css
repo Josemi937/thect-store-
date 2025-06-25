@@ -1,0 +1,101 @@
+/* headphones.css */
+h1 {
+  color: #ff6600;
+}
+#products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.product {
+  width: calc((100% - 60px) / 4);
+  background-color: white; /* igual que secciones en home */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.product-body h3 {
+  margin: 0 0 10px;
+  color: #ff6600; /* mismo naranja */
+}
+
+.product-body p {
+  flex-grow: 1;
+  margin: 0 0 15px;
+  color: #333;
+}
+
+.product-body .price {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: auto;
+  color: #ff6600; /* mismo naranja */
+}
+
+/* Modal styles */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  max-width: 600px;
+  max-height: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 40px auto;
+  object-fit: contain;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.back-btn {
+  margin: 30px auto 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}

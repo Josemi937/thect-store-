@@ -19,7 +19,7 @@ function extractPlainText(richText) {
   }).join('\n');
 }
 
-// --- Función para cargar productos headphones ---
+
 async function fetchProducts() {
   const url = `https://cdn.contentful.com/spaces/${spaceId}/environments/master/entries?access_token=${accessToken}&content_type=${productContentType}&include=1`;
 

@@ -41,4 +41,13 @@
     color: #777;
     font-size: 0.9rem;
   }
-  
+  .laptops-section,
+.headphones-section {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.laptops-section:hover,
+.headphones-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.10);
+}
